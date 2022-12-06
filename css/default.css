@@ -1,0 +1,30 @@
+:root{
+    --logo-color : #252C65;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
