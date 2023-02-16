@@ -297,6 +297,12 @@ section .title div:not(:first-child){
     height: 40vh;
     top: 30vh;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#about .container .profile_box::-webkit-scrollbar{
+    display: none;
 }
 
 
@@ -529,14 +535,6 @@ section .title div:not(:first-child){
     background-color: #ED008C;
 }
 
-#works .mobile-content:nth-child(1) .bg_box{    
-    background-color: #7031FF;
-}
-
-#works .mobile-content:nth-child(2) .bg_box{    
-    background-color: #699181;
-}
-
 #works .responsive-content:nth-child(1) .bg_box{    
     background-color: #E31D1A;
 }
@@ -574,7 +572,7 @@ section .title div:not(:first-child){
     transform: translateX(-50%);
 }
 
-#works #mobile .images{
+#works #etc .images{
     width: 100px;
     position: absolute;
     top: 0;
@@ -685,13 +683,13 @@ section .title div:not(:first-child){
 }
 
 
-#works #mobile .images .phone{
+#works #etc .images .phone{
     z-index: 10;
     position: relative;
     width: 100px;
 }
 
-#works #mobile .images .screen{
+#works #etc .images .screen{
     width: 58px;
     height: 127px;
     border-radius: 10px;
@@ -708,12 +706,16 @@ section .title div:not(:first-child){
     animation-iteration-count: infinite;
 }
 
-#works #mobile .heypoll .images .screen{
-    background-image: url(../images/heypoll_screen.jpg);
+#works #etc .skino .images .screen{
+    background-image: url(../images/skino_screen.jpg);
 }
 
-#works #mobile .m_invitaion .images .screen{
-    background-image: url(../images/mobile_invitaion.jpg);
+#works #etc .earrings .images .screen{
+    background-image: url(../images/earrings_screen.jpg);
+}
+
+#works #etc .tamburins .images .screen{
+    background-image: url(../images/tamburins_screen.jpg);
 }
 
 
@@ -832,43 +834,6 @@ section .title div:not(:first-child){
     background-color: #333333;
 }
 
-#works .mobile-content:nth-child(1) .text .color > div > p:nth-child(1){
-    background-color: #7031FF;
-}
-
-#works .mobile-content:nth-child(1) .text .color > div > p:nth-child(2){
-    background-color: #FF75AC;
-}
-
-#works .mobile-content:nth-child(1) .text .color > div > p:nth-child(3){
-    background-color: #F8F8F9;
-    color: #000;
-}
-
-#works .mobile-content:nth-child(1) .text .color > div > p:nth-child(4){
-    background-color: #999999;
-    color: #000;
-}
-
-#works .mobile-content:nth-child(2) .text .color > div > p:nth-child(1){
-    background-color: #084A1F;
-}
-
-#works .mobile-content:nth-child(2) .text .color > div > p:nth-child(2){
-    background-color: #BED5C9;
-    color: #000;
-}
-
-#works .mobile-content:nth-child(2) .text .color > div > p:nth-child(3){
-    background-color: #699181;
-    color: #fff;
-}
-
-#works .mobile-content:nth-child(2) .text .color > div > p:nth-child(4){
-    background-color: #F1EFEB;
-    color: #000;
-}
-
 #works .responsive-content:nth-child(1) .text .color > div > p:nth-child(1){
     background-color: #E31D1A;
 }
@@ -941,7 +906,7 @@ section .title div:not(:first-child){
 }
 
 
-#mobile .text .btn-group > button:first-child{
+#etc .text .btn-group > button:first-child{
     background-color: var(--logo-color);
     color: #fff;
     margin: 0;
@@ -972,6 +937,12 @@ section .title div:not(:first-child){
     z-index: 9999;
     overflow: scroll;
     text-align: center;
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#works .workdetail > div::-webkit-scrollbar{
     display: none;
 }
 

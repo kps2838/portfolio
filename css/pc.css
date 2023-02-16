@@ -518,12 +518,16 @@ section .title div:not(:first-child){
     background-color: #0058AB;
 }
 
-#works .mobile-content:nth-child(1) .bg_box{    
-    background-color: #7031FF;
+#works .etc-content:nth-child(1) .bg_box{    
+    background-color: #4E3634;
 }
 
-#works .mobile-content:nth-child(2) .bg_box{    
-    background-color: #699181;
+#works .etc-content:nth-child(2) .bg_box{    
+    background-color: #FEF4F3;
+}
+
+#works .etc-content:nth-child(3) .bg_box{ 
+    background-color: #788387;   
 }
 
 #works .responsive-content:nth-child(1) .bg_box{    
@@ -684,24 +688,28 @@ section .title div:not(:first-child){
 }
 
 
-#works #mobile .images{
+#works #etc .images{
     position: relative;
     margin-right: 150px;
     padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
 }
 
-#works #mobile .images .phone{
+#works #etc .images .phone{
     z-index: 10;
-    position: relative;
+    width: 250px;
 }
 
-#works #mobile .images .screen{
+#works #etc .images .screen{
     width: 145px;
     height: 311px;
     border-radius: 15px;
     position: absolute;
     top: 101px;
-    left: 48px;
+    left: 175px;
     z-index: 5;
     background-position: top;
     background-size: cover;
@@ -712,12 +720,16 @@ section .title div:not(:first-child){
     animation-iteration-count: infinite;
 }
 
-#works #mobile .heypoll .images .screen{
-    background-image: url(../images/heypoll_screen.jpg);
+#works #etc .skino .images .screen{
+    background-image: url(../images/skino_screen.jpg);
 }
 
-#works #mobile .m_invitaion .images .screen{
-    background-image: url(../images/mobile_invitaion.jpg);
+#works #etc .earrings .images .screen{
+    background-image: url(../images/earrings_screen.jpg);
+}
+
+#works #etc .tamburins .images .screen{
+    background-image: url(../images/tamburins_screen.jpg);
 }
 
 
@@ -741,7 +753,7 @@ section .title div:not(:first-child){
     padding-left: 60px;
 }
 
-#works #mobile .images > h3{
+#works #etc .images > h3{
     margin-top: 0;
     font-size: 30px;
     font-weight: 600;
@@ -760,6 +772,11 @@ section .title div:not(:first-child){
     display: block;
 }
 
+#works #etc .container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 #works .container .text h4{
     font-size: 26px;
@@ -881,43 +898,6 @@ section .title div:not(:first-child){
     color: #000;
 }
 
-#works .mobile-content:nth-child(1) .text .color > div > p:nth-child(1){
-    background-color: #7031FF;
-}
-
-#works .mobile-content:nth-child(1) .text .color > div > p:nth-child(2){
-    background-color: #FF75AC;
-}
-
-#works .mobile-content:nth-child(1) .text .color > div > p:nth-child(3){
-    background-color: #F8F8F9;
-    color: #000;
-}
-
-#works .mobile-content:nth-child(1) .text .color > div > p:nth-child(4){
-    background-color: #999999;
-    color: #000;
-}
-
-#works .mobile-content:nth-child(2) .text .color > div > p:nth-child(1){
-    background-color: #084A1F;
-}
-
-#works .mobile-content:nth-child(2) .text .color > div > p:nth-child(2){
-    background-color: #BED5C9;
-    color: #000;
-}
-
-#works .mobile-content:nth-child(2) .text .color > div > p:nth-child(3){
-    background-color: #699181;
-    color: #fff;
-}
-
-#works .mobile-content:nth-child(2) .text .color > div > p:nth-child(4){
-    background-color: #F1EFEB;
-    color: #000;
-}
-
 #works .responsive-content:nth-child(1) .text .color > div > p:nth-child(1){
     background-color: #5DA62B;
 }
@@ -993,7 +973,7 @@ section .title div:not(:first-child){
 }
 
 
-#mobile .text .btn-group > button:first-child{
+#etc .text .btn-group > button:first-child{
     background-color: #252C65;
     color: #fff;
     margin: 0;
@@ -1025,6 +1005,11 @@ section .title div:not(:first-child){
     overflow: scroll;
     text-align: center;
     display: none;
+}
+
+#works .workdetail.etc img{
+    width: 860px;
+
 }
 
 #works .workdetail > div.on{

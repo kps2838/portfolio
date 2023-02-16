@@ -68,7 +68,7 @@ $(function(){
 
 
 
-    $('#mobile .prev').click(function(){
+    $('#etc .prev').click(function(){
         const target = $('#works .slide .box_group .bg_box');
         target.removeClass('on'),
         void target.outerWidth(),
@@ -82,16 +82,16 @@ $(function(){
         }
     });
 
-    $('#mobile .next').click(function(){
+    $('#etc .next').click(function(){
         const target = $('#works .slide .box_group .bg_box');
         target.removeClass('on'),
         void target.outerWidth(),
         target.addClass('on');
-        if(slideNum < 1){
+        if(slideNum < 2){
             position -= w;
             $('#works .contents .slide').css('transform', `translateX(${position}px)`);
             slideNum = slideNum+1;
-        } else if(slideNum==1){
+        } else if(slideNum==2){
             $('#works .contents .slide').css('transform', `${3 * w}`);
         }
     });
@@ -118,7 +118,7 @@ $(function(){
 
       $('#works .category > button').eq(2).click(function(){
         $('#works .contents').removeClass('on');
-        $('#mobile').addClass('on');
+        $('#etc').addClass('on');
       })
 
 })

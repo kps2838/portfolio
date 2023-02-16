@@ -88,6 +88,42 @@ $(function(){
           $(this).find('.name_band').find('img').attr('src', './images/name.png')
         });
 
+  
+      } else{
+        $(window).scroll(function(){
+          var scroll = $(window).scrollTop();
+          var about_scroll = $('#about').offset().top;
+          var works_scroll = $('#works').offset().top;
+          var contact_scroll = $('#contact').offset().top;
+  
+          if (scroll < about_scroll) {
+              $("#gnb > ul > li > a").css("color" , "#fff");
+              $("#gnb > ul").css("border-bottom" , "5px solid #fff");
+              $("#gnb > ul > li").eq(0).find('a').css('color','#ff0000')
+            }
+  
+          if (scroll >= about_scroll && scroll < works_scroll) {
+            $("#gnb > ul > li > a").css("color" , "#252C65");
+            $("#gnb > ul").css("border-bottom" , "5px solid #252C65");
+            $("#gnb > ul > li").eq(1).find('a').css('color','#ff0000')
+          }
+  
+          if (scroll >= works_scroll && scroll < contact_scroll) {
+              $("#gnb > ul > li > a").css("color" , "#fff");
+              $("#gnb > ul").css("border-bottom" , "5px solid #fff");
+              $("#gnb > ul > li").eq(2).find('a').css('color','#ff0000')
+            }
+  
+            if (scroll >= contact_scroll){
+              $("#gnb > ul > li > a").css("color" , "#252C65");
+              $("#gnb > ul").css("border-bottom" , "5px solid #252C65");
+              $("#gnb > ul > li").eq(3).find('a').css('color','#ff0000')
+            }
+            
+        })
+
+        
+      }
 
         // 팝업창
         $('#website .han .detail').click(function(){
@@ -126,6 +162,22 @@ $(function(){
           $('section').off("mousewheel DOMMouseScroll");
         });
 
+        $('#etc .skino .detail').click(function(){
+          $('.workdetail .etc_detail_01').addClass('on');
+          $('#works .bg_black').addClass('on');
+          $('section').off("mousewheel DOMMouseScroll");
+        });
+        $('#etc .earrings .detail').click(function(){
+          $('.workdetail .etc_detail_02').addClass('on');
+          $('#works .bg_black').addClass('on');
+          $('section').off("mousewheel DOMMouseScroll");
+        });
+        $('#etc .tamburins .detail').click(function(){
+          $('.workdetail .etc_detail_03').addClass('on');
+          $('#works .bg_black').addClass('on');
+          $('section').off("mousewheel DOMMouseScroll");
+        });
+
 
         // 팝업창 닫기
         $(document).mouseup(function (e){
@@ -136,43 +188,8 @@ $(function(){
             scroll_section();
           }
         });
+
       
-
-
-  
-      } else{
-        $(window).scroll(function(){
-          var scroll = $(window).scrollTop();
-          var about_scroll = $('#about').offset().top;
-          var works_scroll = $('#works').offset().top;
-          var contact_scroll = $('#contact').offset().top;
-  
-          if (scroll < about_scroll) {
-              $("#gnb > ul > li > a").css("color" , "#fff");
-              $("#gnb > ul").css("border-bottom" , "5px solid #fff");
-              $("#gnb > ul > li").eq(0).find('a').css('color','#ff0000')
-            }
-  
-          if (scroll >= about_scroll && scroll < works_scroll) {
-            $("#gnb > ul > li > a").css("color" , "#252C65");
-            $("#gnb > ul").css("border-bottom" , "5px solid #252C65");
-            $("#gnb > ul > li").eq(1).find('a').css('color','#ff0000')
-          }
-  
-          if (scroll >= works_scroll && scroll < contact_scroll) {
-              $("#gnb > ul > li > a").css("color" , "#fff");
-              $("#gnb > ul").css("border-bottom" , "5px solid #fff");
-              $("#gnb > ul > li").eq(2).find('a').css('color','#ff0000')
-            }
-  
-            if (scroll >= contact_scroll){
-              $("#gnb > ul > li > a").css("color" , "#252C65");
-              $("#gnb > ul").css("border-bottom" , "5px solid #252C65");
-              $("#gnb > ul > li").eq(3).find('a').css('color','#ff0000')
-            }
-        })
-      }
-
 
 
 
